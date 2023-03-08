@@ -4,11 +4,12 @@ sudo usermod -aG sudo wtc
 
 echo "wtc:wtc" | sudo chpasswd
 
-echo wtc | su - wtc -c "echo wtc | sudo -S apt install curl expect -y"
+echo wtc | su - wtc -c "echo wtc | sudo -S apt install curl -y"
 
-sudo su
+runuser -l wtc -c 'sh <(curl -L https://nixos.org/nix/install) --no-daemon'
 
-su - wtc
+runuser -l wtc -c '. /home/wtc/.nix-profile/etc/profile.d/nix.sh'
+
 
 
 
