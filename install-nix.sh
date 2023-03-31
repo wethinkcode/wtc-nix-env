@@ -1,14 +1,11 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -e
 
-# Install the Nix package manager
-curl -L https://nixos.org/nix/install | sh --daemon
+# Download and install the experimental version of Nix
+curl https://nixos.org/releases/nix/nix-2.5pre20211217_228e100/install | sh
 
-# Load the Nix environment
-. ~/.nix-profile/etc/profile.d/nix.sh
+# Set up the Nix environment variables
+source ~/.nix-profile/etc/profile.d/nix.sh
 
-# Build the Nix environment
-nix-build
-
-# Activate the Nix environment
-nix-shell
+# Test the Nix installation
+nix-env --version
