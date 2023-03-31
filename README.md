@@ -14,3 +14,12 @@ This script will download and install the experimental version of Nix and set up
 --chmod +x install-nix.sh
 then
 --./install-nix.sh
+
+# home.nix
+This Home-Manager configuration enables Zsh and adds the ~/.nix-profile/bin directory to your shell's PATH.
+
+# build environments
+nix-build default.nix
+
+# enter the shell environment
+nix-shell shell.nix
