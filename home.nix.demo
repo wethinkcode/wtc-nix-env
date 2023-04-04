@@ -11,17 +11,19 @@
 
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "student";
-  home.homeDirectory = "/home/student";
+  home.username = "wtc";
+  home.homeDirectory = "/home/wtc";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with.
-  home.stateVersion = "22.11"; # Please read the comment before changing.
+  home.stateVersion = "22.11";
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
     slack
+    docker
+    gnupg
     tdesktop
     neovim
     git
