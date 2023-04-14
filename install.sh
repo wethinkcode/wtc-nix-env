@@ -2,7 +2,7 @@
 set -e
 
 # install requirements
-rm --interactive=never $HOME/requirements.sh
+rm -f $HOME/requirements.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/requirements.sh
 
@@ -11,7 +11,7 @@ wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/sr
 rm $HOME/requirements.sh
 
 # create nix folder
-rm --interactive=never $HOME/nix-folder.sh
+rm -f $HOME/nix-folder.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/nix-folder.sh
 
@@ -20,7 +20,7 @@ wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/sr
 rm $HOME/nix-folder.sh
 
 # create user
-rm --interactive=never $HOME/create-user.sh
+rm -f $HOME/create-user.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/create-user.sh
 
@@ -29,7 +29,7 @@ wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/sr
 rm $HOME/create-user.sh
 
 # install nix
-rm --interactive=never $HOME/nix-install.sh
+rm -f $HOME/nix-install.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/nix-install.sh
 
@@ -38,7 +38,7 @@ wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/sr
 rm $HOME/nix-install.sh
 
 # install home-manager
-rm --interactive=never $HOME/hm-install.sh
+rm -f $HOME/hm-install.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/hm-install.sh
 
@@ -47,7 +47,7 @@ wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/sr
 rm $HOME/hm-install.sh
 
 # setup enviroment
-rm --interactive=never $HOME/nix-env.sh
+rm -f $HOME/nix-env.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/nix-env.sh
 
