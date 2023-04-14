@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 # removes the nix folder
 sudo rm -vrf /nix
 

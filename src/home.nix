@@ -23,12 +23,12 @@
   home.packages = with pkgs; [
     git
     gimp vlc
-    #gnupg
-    #libreoffice
-    #jetbrains.jdk
-    #slack tdesktop
-    #docker docker-compose
-    #neovim jetbrains.idea-community android-studio vscode
+    gnupg
+    libreoffice
+    jetbrains.jdk
+    slack tdesktop
+    docker docker-compose
+    neovim jetbrains.idea-community android-studio vscode
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

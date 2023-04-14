@@ -1,3 +1,6 @@
+#!/bin/bash
+set -e
+
 # installs nix package manager
 sudo runuser -l wtc -c 'sh <(curl -L https://nixos.org/nix/install) --no-daemon'
 
