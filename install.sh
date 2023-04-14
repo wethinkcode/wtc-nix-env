@@ -1,12 +1,14 @@
 #!/bin/bash
 set -e
 
+cd $HOME
+
 # install requirements
 rm -f $HOME/requirements.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/requirements.sh
 
-sh $HOME/requirements.sh
+sh requirements.sh
 
 rm $HOME/requirements.sh
 
@@ -15,7 +17,7 @@ rm -f $HOME/nix-folder.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/nix-folder.sh
 
-sh $HOME/nix-folder.sh
+sh nix-folder.sh
 
 rm $HOME/nix-folder.sh
 
@@ -24,7 +26,7 @@ rm -f $HOME/create-user.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/create-user.sh
 
-sh $HOME/create-user.sh
+sh create-user.sh
 
 rm $HOME/create-user.sh
 
@@ -33,7 +35,7 @@ rm -f $HOME/nix-install.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/nix-install.sh
 
-sh $HOME/nix-install.sh
+sh nix-install.sh
 
 rm $HOME/nix-install.sh
 
@@ -42,7 +44,7 @@ rm -f $HOME/hm-install.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/hm-install.sh
 
-sh $HOME/hm-install.sh
+sh hm-install.sh
 
 rm $HOME/hm-install.sh
 
@@ -51,6 +53,6 @@ rm -f $HOME/nix-env.sh
 
 wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/nix-env.sh
 
-sh $HOME/nix-env.sh
+sh nix-env.sh
 
 rm $HOME/nix-env.sh
