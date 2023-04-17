@@ -2,9 +2,10 @@
 set -e
 
 # delete user
-user_exists(){ id "$1" &>/dev/null; } # silent, it just sets the exit code
-if user_exists "$1"; code=$?; then  # use the function, save the code
-    sudo userdel -rf bootcamp
+if id -u "$1" >/dev/null 2>&1; then
+  sudo userdel -rf bootcamp
+else
+  echo "creating user..."
 fi
 
 # creates a standerd user
