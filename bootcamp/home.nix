@@ -22,7 +22,8 @@
   # environment.
   home.packages = with pkgs; [
     #git gnupg
-    vlc gimp audacity
+    vlc 
+    #gimp audacity
     #libreoffice
     #slack tdesktop
     #neovim vscode
