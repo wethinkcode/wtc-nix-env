@@ -57,7 +57,7 @@ rm -f $HOME/tmp_wtc/nix-env.sh
 
 wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-env.sh
 
-sh nix-env.sh
+sh $HOME/tmp_wtc/nix-env.sh
 
 rm $HOME/tmp_wtc/nix-env.sh
 
