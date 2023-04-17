@@ -5,4 +5,4 @@ set -e
 sudo adduser --disabled-password --gecos "" bootcamp
 
 # give the user a password
-echo "wethinkcode2023:bootcamp" | sudo chpasswd
+echo "bootcamp:bootcamp" | sudo chpasswd
