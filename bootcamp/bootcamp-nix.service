@@ -7,8 +7,8 @@ AllowIsolate=yes
 [Service]
 Type=idle
 User=root
-ExecStart=su - bootcamp -c "/usr/bin/bash /usr/local/bin/bootcamp-nix"
-ExecStop=su - bootcamp -c "/usr/bin/bash /usr/local/bin/bootcamp-nix"
+ExecStart=/usr/bin/bash /usr/local/bin/bootcamp-nix
+ExecStop=/usr/bin/bash /usr/local/bin/bootcamp-nix
 RemainAfterExit=yes
 
 [Install]

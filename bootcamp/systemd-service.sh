@@ -43,7 +43,7 @@ sudo mv $HOME/tmp_bootcamp/bootcamp-nix /usr/local/bin/bootcamp-nix
 
 sudo chown bootcamp:bootcamp /usr/local/bin/bootcamp-nix
 
-sudo chmod a+rwx /usr/local/bin/bootcamp-nix
+sudo chmod +x /usr/local/bin/bootcamp-nix
 
 sudo wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/bootcamp-nix.service
 

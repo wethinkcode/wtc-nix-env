@@ -3,8 +3,10 @@ set -e
 
 # updating and cleaning the bootcamp profile
 DEBIAN_FRONTEND=noninteractive
-nix-channel --update
-nix-env -iA nixpkgs.nix nixpkgs.cacert
-nix-env --delete-generations old
-nix-store --gc
-nix-collect-garbage -d
+sudo rsync -a --delete /home/bootcamp-profile/ /home/bootcamp/
+su - bootcamp -c "nix-channel --update"
+su - bootcamp -c "nix-env -iA nixpkgs.nix nixpkgs.cacert"
+su - bootcamp -c "nix-env --delete-generations old"
+su - bootcamp -c "nix-store --gc"
+su - bootcamp -c "nix-collect-garbage -d"
+sudo rsync -a --delete /home/bootcamp/ /home/bootcamp-profile/
