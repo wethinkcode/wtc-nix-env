@@ -1,9 +1,11 @@
 [Unit]
 DefaultDependencies=no
-Before=shutdown.target reboot.target halt.target kexec.target umount.target
+Requires=multi-user.target
+After=multi-user.target
+AllowIsolate=yes
 
 [Service]
-Type=oneshot
+Type=idle
 User=root
 ExecStart=/usr/bin/bash /usr/local/bin/bootcamp-update
 ExecStop=/usr/bin/bash /usr/local/bin/bootcamp-update
