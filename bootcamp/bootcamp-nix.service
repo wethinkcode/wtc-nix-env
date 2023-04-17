@@ -1,0 +1,16 @@
+[Unit]
+DefaultDependencies=no
+Requires=multi-user.target
+After=multi-user.target
+AllowIsolate=yes
+
+[Service]
+Type=idle
+User=bootcamp
+Group=bootcamp
+ExecStart=/usr/bin/bash /usr/local/bin/bootcamp-nix
+ExecStop=/usr/bin/bash /usr/local/bin/bootcamp-nix
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

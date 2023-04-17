@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# updating and cleaning the bootcamp profile
+DEBIAN_FRONTEND=noninteractive
+nix-channel --update
+nix-env -iA nixpkgs.nix nixpkgs.cacert
+nix-env --delete-generations old
+nix-store --gc
+nix-collect-garbage -d
