@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+# updating and cleaning the bootcamp profile
+DEBIAN_FRONTEND=noninteractive
+sudo rsync -a --delete /home/bootcamp-profile/ /home/bootcamp/
+sudo apt-get update
+sudo apt-get -o "Dpkg::Options::=--force-confold" -o "Dpkg::Options::=--force-confdef" upgrade -y --allow-downgrades --allow-remove-essential --allow-change-held-packages
+sudo apt-get autoremove -y
+sudo apt-get autoclean -y
+sudo rsync -a --delete /home/bootcamp/ /home/bootcamp-profile/
