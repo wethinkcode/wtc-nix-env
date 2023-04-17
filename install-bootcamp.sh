@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+# clearing temporary work folder
+rm -rf $HOME/tmp_bootcamp
+
 # create temporary work folder
 mkdir $HOME/tmp_bootcamp
 
