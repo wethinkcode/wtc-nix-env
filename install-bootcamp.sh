@@ -1,58 +1,62 @@
 #!/bin/bash
 set -e
 
-cd $HOME
+# create temporary work folder
+mkdir $HOME/tmp_bootcamp
 
 # install requirements
-rm -f $HOME/requirements.sh
+rm -f $HOME/tmp_bootcamp/requirements.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/requirements.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/requirements.sh
 
-sh requirements.sh
+sh $HOME/tmp_bootcamp/requirements.sh
 
-rm $HOME/requirements.sh
+rm $HOME/tmp_bootcamp/requirements.sh
 
 # create nix folder
-rm -f $HOME/nix-folder.sh
+rm -f $HOME/tmp_bootcamp/nix-folder.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-folder.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-folder.sh
 
 sh nix-folder.sh
 
-rm $HOME/nix-folder.sh
+rm $HOME/tmp_bootcamp/nix-folder.sh
 
 # create user
-rm -f $HOME/create-user.sh
+rm -f $HOME/tmp_bootcamp/create-user.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/create-user.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/create-user.sh
 
-sh create-user.sh
+sh $HOME/tmp_bootcamp/create-user.sh
 
-rm $HOME/create-user.sh
+rm $HOME/tmp_bootcamp/create-user.sh
 
 # install nix
-rm -f $HOME/nix-install.sh
+rm -f $HOME/tmp_bootcamp/nix-install.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-install.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-install.sh
 
-sh nix-install.sh
+sh $HOME/tmp_bootcamp/nix-install.sh
 
-rm $HOME/nix-install.sh
+rm $HOME/tmp_bootcamp/nix-install.sh
 
 # install home-manager
-rm -f $HOME/hm-install.sh
+rm -f $HOME/tmp_bootcamp/hm-install.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/hm-install.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/hm-install.sh
 
-sh hm-install.sh
+sh $HOME/tmp_bootcamp/hm-install.sh
 
-rm $HOME/hm-install.sh
+rm $HOME/tmp_bootcamp/hm-install.sh
 
 # setup enviroment
-rm -f $HOME/nix-env.sh
+rm -f $HOME/tmp_bootcamp/nix-env.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-env.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-env.sh
 
-sh nix-env.sh
+sh $HOME/tmp_bootcamp/nix-env.sh
 
-rm $HOME/nix-env.sh
+rm $HOME/tmp_bootcamp/nix-env.sh
+
+# delete temporary work folder
+rm -f $HOME/tmp_bootcamp
