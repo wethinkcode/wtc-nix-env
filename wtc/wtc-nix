@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# updating and cleaning the wtc profile
+DEBIAN_FRONTEND=noninteractive
+su - wtc -c "nix-channel --update"
+su - wtc -c "nix-env -iA nixpkgs.nix nixpkgs.cacert"
+su - wtc -c "nix-env --delete-generations old"
+su - wtc -c "nix-store --gc"
+su - wtc -c "nix-collect-garbage -d"

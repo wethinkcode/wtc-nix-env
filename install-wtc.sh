@@ -1,58 +1,74 @@
 #!/bin/bash
 set -e
 
-cd $HOME
+# clearing temporary work folder
+rm -rf $HOME/tmp_wtc
+
+# create temporary work folder
+mkdir $HOME/tmp_wtc
 
 # install requirements
-rm -f $HOME/requirements.sh
+rm -f $HOME/tmp_wtc/requirements.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/requirements.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/requirements.sh
 
-sh requirements.sh
+sh $HOME/tmp_wtc/requirements.sh
 
-rm $HOME/requirements.sh
+rm $HOME/tmp_wtc/requirements.sh
 
 # create nix folder
-rm -f $HOME/nix-folder.sh
+rm -f $HOME/tmp_wtc/nix-folder.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-folder.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-folder.sh
 
-sh nix-folder.sh
+sh $HOME/tmp_wtc/nix-folder.sh
 
-rm $HOME/nix-folder.sh
+rm $HOME/tmp_wtc/nix-folder.sh
 
 # create user
-rm -f $HOME/create-user.sh
+rm -f $HOME/tmp_wtc/create-user.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/create-user.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/create-user.sh
 
-sh create-user.sh
+sh $HOME/tmp_wtc/create-user.sh
 
-rm $HOME/create-user.sh
+rm $HOME/tmp_wtc/create-user.sh
 
 # install nix
-rm -f $HOME/nix-install.sh
+rm -f $HOME/tmp_wtc/nix-install.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-install.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-install.sh
 
-sh nix-install.sh
+sh $HOME/tmp_wtc/nix-install.sh
 
-rm $HOME/nix-install.sh
+rm $HOME/tmp_wtc/nix-install.sh
 
 # install home-manager
-rm -f $HOME/hm-install.sh
+rm -f $HOME/tmp_wtc/hm-install.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/hm-install.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/hm-install.sh
 
-sh hm-install.sh
+sh $HOME/tmp_wtc/hm-install.sh
 
-rm $HOME/hm-install.sh
+rm $HOME/tmp_wtc/hm-install.sh
 
 # setup enviroment
-rm -f $HOME/nix-env.sh
+rm -f $HOME/tmp_wtc/nix-env.sh
 
-wget -P $HOME/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-env.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-env.sh
 
 sh nix-env.sh
 
-rm $HOME/nix-env.sh
+rm $HOME/tmp_wtc/nix-env.sh
+
+# create systemd services
+rm -f $HOME/tmp_wtc/systemd-service.sh
+
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/systemd-service.sh
+
+sh $HOME/tmp_wtc/systemd-service.sh
+
+rm $HOME/tmp_wtc/systemd-service.sh
+
+# delete temporary work folder
+rm -rf $HOME/tmp_wtc

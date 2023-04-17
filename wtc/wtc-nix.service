@@ -1,0 +1,15 @@
+[Unit]
+DefaultDependencies=no
+Requires=multi-user.target
+After=multi-user.target
+AllowIsolate=yes
+
+[Service]
+Type=idle
+User=root
+ExecStart=/usr/bin/bash /usr/local/bin/wtc-nix
+ExecStop=/usr/bin/bash /usr/local/bin/wtc-nix
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
