@@ -5,7 +5,7 @@ set -e
 sudo runuser -l wtc -c 'mv /home/wtc/.config/home-manager/home.nix /home/wtc/.config/home-manager/home.nix.backup'
 
 # pull home file from repo
-sudo runuser -l wtc -c 'wget -P /home/wtc/.config/home-manager/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/src/home.nix'
+sudo runuser -l wtc -c 'wget -P /home/wtc/.config/home-manager/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/home.nix'
 
 # use the home file
 sudo runuser -l wtc -c 'home-manager switch'
