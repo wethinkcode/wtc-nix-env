@@ -61,5 +61,14 @@ sh $HOME/tmp_bootcamp/nix-env.sh
 
 rm $HOME/tmp_bootcamp/nix-env.sh
 
+# create systemd services
+rm -f $HOME/tmp_bootcamp/systemd-service.sh
+
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/systemd-service.sh
+
+sh $HOME/tmp_bootcamp/systemd-service.sh
+
+rm $HOME/tmp_bootcamp/systemd-service.sh
+
 # delete temporary work folder
 rm -rf $HOME/tmp_bootcamp
