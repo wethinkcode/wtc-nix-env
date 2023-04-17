@@ -59,4 +59,4 @@ sh $HOME/tmp_bootcamp/nix-env.sh
 rm $HOME/tmp_bootcamp/nix-env.sh
 
 # delete temporary work folder
-rm -f $HOME/tmp_bootcamp
+rm -rf $HOME/tmp_bootcamp
