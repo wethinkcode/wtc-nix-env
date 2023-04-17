@@ -43,13 +43,13 @@ sudo mv $HOME/tmp_bootcamp/bootcamp-nix /usr/local/bin/bootcamp-nix
 
 sudo chown bootcamp:bootcamp /usr/local/bin/bootcamp-nix
 
-sudo chmod +x /usr/local/bin/bootcamp-nix
+sudo chmod a+rwx /usr/local/bin/bootcamp-nix
 
 sudo wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/bootcamp-nix.service
 
 sudo mv $HOME/tmp_bootcamp/bootcamp-nix.service /lib/systemd/system/bootcamp-nix.service
 
-sudo chown bootcamp:bootcamp /lib/systemd/system/bootcamp-nix.service
+sudo chown root:root /lib/systemd/system/bootcamp-nix.service
 
 sudo chmod 644 /lib/systemd/system/bootcamp-nix.service
 
@@ -57,7 +57,7 @@ sudo wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/w
 
 sudo mv $HOME/tmp_bootcamp/bootcamp-nix.service /etc/systemd/bootcamp-nix.service
 
-sudo chown bootcamp:bootcamp /etc/systemd/bootcamp-nix.service
+sudo chown root:root /etc/systemd/bootcamp-nix.service
 
 sudo chmod 644 /etc/systemd/bootcamp-nix.service
 
