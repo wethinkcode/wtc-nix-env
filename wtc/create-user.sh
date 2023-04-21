@@ -2,8 +2,7 @@
 set -e
 
 # delete user
-sudo id -u "wtc"
-if id -u "$1" >/dev/null 2>&1; then
+if id -u "1001" >/dev/null 2>&1; then
   sudo userdel -rf wtc
 else
   echo "creating user..."
