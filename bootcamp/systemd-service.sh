@@ -7,6 +7,8 @@ sudo mkdir /home/bootcamp-profile
 
 sudo chown root:root /home/bootcamp-profile
 
+cd ~
+
 sudo rsync -avh --delete /home/bootcamp/ /home/bootcamp-profile/
 
 sudo wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/bootcamp-update
