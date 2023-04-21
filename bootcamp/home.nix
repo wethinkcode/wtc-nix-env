@@ -21,9 +21,8 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    vlc gimp
     git gnupg
-    vlc 
-    gimp audacity
     libreoffice
     slack tdesktop
     neovim vscode
