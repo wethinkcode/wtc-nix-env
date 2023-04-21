@@ -2,8 +2,7 @@
 set -e
 
 # delete user
-sudo id -u "bootcamp"
-if id -u "$1" >/dev/null 2>&1; then
+if id -u "1001" >/dev/null 2>&1; then
   sudo userdel -rf bootcamp
 else
   echo "creating user..."
