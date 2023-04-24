@@ -21,10 +21,10 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    slack
     vlc gimp
     gnupg git
     libreoffice
-    slack tdesktop
     neovim vscode
   ];
 
