@@ -21,12 +21,12 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    #libreoffice
-    #slack tdesktop
-    #gimp vlc audacity shotcut
-    #gnupg docker docker-compose 
+    libreoffice
+    slack tdesktop
+    gimp vlc audacity shotcut
+    gnupg docker docker-compose 
     git
-    #neovim jetbrains.idea-community jetbrains.jdk android-studio vscode
+    neovim jetbrains.idea-community jetbrains.jdk android-studio vscode
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
