@@ -24,8 +24,7 @@
     slack
     libreoffice
     gimp vlc audacity
-    gnupg docker docker-compose 
-    git
+    gnupg docker docker-compose git
     neovim jetbrains.idea-community jetbrains.jdk android-studio vscode
   ];
 
