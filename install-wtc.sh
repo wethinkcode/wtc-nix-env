@@ -62,13 +62,22 @@ sh $HOME/tmp_wtc/nix-env.sh
 rm $HOME/tmp_wtc/nix-env.sh
 
 # install homebrew
-#rm -f $HOME/tmp_wtc/hb-install.sh
+rm -f $HOME/tmp_wtc/hb-install.sh
 
-#wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/hb-install.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/hb-install.sh
 
-#sh $HOME/tmp_wtc/hb-install.sh
+sh $HOME/tmp_wtc/hb-install.sh
 
-#rm $HOME/tmp_wtc/hb-install.sh
+rm $HOME/tmp_wtc/hb-install.sh
+
+# install sdkman
+rm -f $HOME/tmp_wtc/sdk-install.sh
+
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/sdk-install.sh
+
+sh $HOME/tmp_wtc/sdk-install.sh
+
+rm $HOME/tmp_wtc/sdk-install.sh
 
 # create systemd services
 rm -f $HOME/tmp_wtc/systemd-service.sh
