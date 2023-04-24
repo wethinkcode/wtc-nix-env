@@ -8,4 +8,8 @@ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/admin/.pr
 
 sudo chmod -R a+rwX /home/linuxbrew/
 
-sudo runuser -l wtc -c 'echo "eval '$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)'" >> /home/wtc/.profile'
+sudo chown -R admin:admin /home/wtc/
+
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/wtc/.profile
+
+sudo chown -R wtc:wtc /home/wtc/
