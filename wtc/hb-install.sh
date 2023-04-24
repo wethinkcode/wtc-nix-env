@@ -8,4 +8,4 @@ set -e
 
 sudo chmod -R a+rwX /home/linuxbrew/
 
-sudo runuser -l wtc -c "echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/wtc/.profile"
+sudo runuser -l wtc -c 'echo "eval '$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)'" >> /home/wtc/.profile'
