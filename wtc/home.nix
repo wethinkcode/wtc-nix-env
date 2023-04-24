@@ -22,7 +22,7 @@
   # environment.
   home.packages = with pkgs; [
     libreoffice
-    slack tdesktop
+    slack tdesktop zoom-us
     gimp vlc audacity shotcut
     git gnupg docker docker-compose
     neovim jetbrains.idea-community jetbrains.jdk android-studio vscode
