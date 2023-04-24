@@ -10,7 +10,7 @@ mkdir $HOME/tmp_bootcamp
 # install requirements
 rm -f $HOME/tmp_bootcamp/requirements.sh
 
-wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/requirements.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/general/requirements.sh
 
 sh $HOME/tmp_bootcamp/requirements.sh
 
@@ -19,7 +19,7 @@ rm $HOME/tmp_bootcamp/requirements.sh
 # create nix folder
 rm -f $HOME/tmp_bootcamp/nix-folder.sh
 
-wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/nix-folder.sh
+wget -P $HOME/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/general/nix-folder.sh
 
 sh $HOME/tmp_bootcamp/nix-folder.sh
 

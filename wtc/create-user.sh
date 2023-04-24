@@ -11,8 +11,5 @@ fi
 # creates a standerd user
 sudo adduser --disabled-password --gecos "" wtc
 
-# turn into admin
-sudo usermod -aG sudo wtc
-
 # give the user a password
 echo "wtc:wtc" | sudo chpasswd

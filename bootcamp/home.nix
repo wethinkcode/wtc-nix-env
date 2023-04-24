@@ -22,7 +22,7 @@
   # environment.
   home.packages = with pkgs; [
     vlc gimp
-    git gnupg
+    gnupg git
     libreoffice
     slack tdesktop
     neovim vscode

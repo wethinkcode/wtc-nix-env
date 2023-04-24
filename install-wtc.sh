@@ -10,7 +10,7 @@ mkdir $HOME/tmp_wtc
 # install requirements
 rm -f $HOME/tmp_wtc/requirements.sh
 
-wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/requirements.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/general/requirements.sh
 
 sh $HOME/tmp_wtc/requirements.sh
 
@@ -19,7 +19,7 @@ rm $HOME/tmp_wtc/requirements.sh
 # create nix folder
 rm -f $HOME/tmp_wtc/nix-folder.sh
 
-wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/wtc/nix-folder.sh
+wget -P $HOME/tmp_wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/general/nix-folder.sh
 
 sh $HOME/tmp_wtc/nix-folder.sh
 
