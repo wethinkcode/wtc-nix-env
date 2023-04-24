@@ -6,7 +6,7 @@ set -e
 
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/admin/.profile
 
-sudo chmod -R a+rwX /home/linuxbrew/
+sudo chown -R wtc:wtc /home/linuxbrew/
 
 sudo chown -R admin:admin /home/wtc/
 
