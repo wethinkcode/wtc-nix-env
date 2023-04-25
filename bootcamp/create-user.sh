@@ -8,6 +8,7 @@ USR_ID_CAMPER=$(grep bootcamp /etc/passwd|cut -d: -f 3)
 if [[ "${USR_ID_CAMPER}" =~ ^[0-9]+$ ]]; then
         sudo userdel -rf wtc
         sudo systemctl disable wtc-nix.service
+        sudo rm -rf /usr/local/bin/wtc-nix
 else
         echo "No wtc user..."
 fi
