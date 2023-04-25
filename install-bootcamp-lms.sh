@@ -22,6 +22,21 @@ cd $HOME
 
 rm $HOME/tmp_bootcamp_lms/download_lms.sh
 
+# lms config
+rm -f $HOME/tmp_bootcamp_lms/load_config.sh
+
+wget -P $HOME/tmp_bootcamp_lms/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp_lms/load_config.sh
+
+chmod u+x $HOME/tmp_bootcamp_lms/load_config.sh
+
+cd $HOME/tmp_bootcamp_lms/
+
+./load_config.sh
+
+cd $HOME
+
+rm $HOME/tmp_bootcamp_lms/load_config.sh
+
 # clearing temporary work folder
 rm -rf $HOME/tmp_bootcamp_lms/
 
