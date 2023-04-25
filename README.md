@@ -11,3 +11,7 @@ sh <(curl -L https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/inst
 ## automated install command for user bootcamp
 
 sh <(curl -L https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/install-bootcamp.sh)
+
+## automated creation of bootcamp lms config and download
+
+sh <(curl -L https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/install-bootcamp-lms.sh)
