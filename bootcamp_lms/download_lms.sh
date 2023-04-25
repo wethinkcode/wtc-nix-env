@@ -7,8 +7,6 @@ open https://wethinkcode-community.slack.com/archives/C01QPC5DLBA
 
 read -p "Hit enter after you have downloaded wtc-lms in you downloads folder..." wtc-lms
 
-#wget -P /home/bootcamp/ $wtc_lms
-
 chmod u+x /home/bootcamp/Downloads/wtc-lms
 
 mv /home/bootcamp/Downloads/wtc-lms /home/bootcamp/wtc-lms
