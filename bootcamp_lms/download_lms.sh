@@ -3,7 +3,7 @@ set -e
 
 cd /home/bootcamp/
 
-read -p "Enter URL of wtc-lms from copied from Slack: " wtc_lms_url
+read -p "Enter link of wtc-lms from copied from Slack: " wtc_lms_url
 
 wget -P /home/bootcamp/ $wtc_lms_url
 
