@@ -4,7 +4,7 @@ set -e
 # delete user
 USR_ID=$(grep wtc /etc/passwd|cut -d: -f 3)
 
-if [[ "$(USR_ID)" =~ ^[0-9]+$ ]]; then
+if [[ "${USR_ID}" =~ ^[0-9]+$ ]]; then
         sudo userdel -rf wtc
 else
         echo "creating user..."
