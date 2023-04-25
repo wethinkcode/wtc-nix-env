@@ -5,6 +5,8 @@ cd /home/bootcamp/tmp_bootcamp_lms/
 
 open https://wethinkcode-community.slack.com/archives/C01QPC5DLBA
 
+sleep 3
+
 echo "Press enter after downloading the latest version "
 read response
 
