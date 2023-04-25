@@ -12,7 +12,7 @@ chmod u+x /home/bootcamp/wtc-lms
 wget -P /home/bootcamp/tmp_bootcamp_lms/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp_lms/path
 
 if grep -q 'if \[ -d \"\$HOME\" \] ; then' '/home/bootcamp/.profile'; then
-    ehco "Path already added..."
+    echo "Path already added..."
 else
     cat path >> /home/bootcamp/.profile
 fi
