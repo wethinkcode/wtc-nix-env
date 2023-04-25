@@ -2,12 +2,8 @@ wget -P /home/bootcamp/.config/wtc/ https://raw.githubusercontent.com/wethinkcod
 
 wget -P /home/bootcamp/.config/wtc/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp_lms/config.py
 
-cd /home/bootcamp/.config/wtc/
-
-python3 config.py
-
-cd /home/bootcamp/
+python3 /home/bootcamp/.config/wtc/config.py
 
 mv /home/bootcamp/.config/wtc/temp.yml /home/bootcamp/.config/wtc/config.yml
 
-#rm /home/bootcamp/.config/wtc/config.py
+rm /home/bootcamp/.config/wtc/config.py
