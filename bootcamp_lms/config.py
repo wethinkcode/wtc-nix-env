@@ -26,7 +26,7 @@ bootcamp_email = input("Please type your email and press Enter: ")
 #    with open('config.yml', 'w') as file:
 #        yaml.dump(data, file)
 
-with open("config.yml", "r") as first_file:
+with open("/home/bootcamp/.config/wtc/config.yml", "r") as first_file:
     data = yaml.safe_load(first_file)
     print(type(data))
 
@@ -34,7 +34,7 @@ with open("config.yml", "r") as first_file:
     data["username"] = bootcamp_email
 
 # Writing a new yaml file with the modifications
-with open("temp.yml", "w") as new_file:
+with open("/home/bootcamp/.config/wtc/temp.yml", "w") as new_file:
     yaml.dump(data, new_file, sort_keys=False)
 
-prepend_line("temp.yml", "---")
+prepend_line("/home/bootcamp/.config/wtc/temp.yml", "---")
