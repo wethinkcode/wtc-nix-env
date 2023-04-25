@@ -13,3 +13,5 @@ sudo chown -R admin:admin /home/wtc/
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/wtc/.profile
 
 sudo chown -R wtc:wtc /home/wtc/
+
+sudo runuser -l wtc -c 'brew doctor'
