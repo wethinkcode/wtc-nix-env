@@ -1,0 +1,3 @@
+if [ -d "$HOME" ] ; then
+    PATH="$HOME:$PATH"
+fi
