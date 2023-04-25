@@ -3,11 +3,15 @@ set -e
 
 cd /home/bootcamp/tmp_bootcamp_lms/
 
-read -p "Enter link of wtc-lms from copied from Slack: " wtc_lms_url
+open https://wethinkcode-community.slack.com/archives/C01QPC5DLBA
 
-wget -P /home/bootcamp/ $wtc_lms_url
+read -p "Hit enter after you have downloaded wtc-lms in you downloads folder..." wtc-lms
 
-chmod u+x /home/bootcamp/wtc-lms
+#wget -P /home/bootcamp/ $wtc_lms
+
+chmod u+x /home/bootcamp/Downloads/wtc-lms
+
+mv /home/bootcamp/Downloads/wtc-lms /home/bootcamp/wtc-lms
 
 wget -P /home/bootcamp/tmp_bootcamp_lms/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp_lms/path
 
