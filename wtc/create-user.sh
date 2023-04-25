@@ -2,10 +2,12 @@
 set -e
 
 # delete user
-if id -u "1002" >/dev/null 2>&1; then
-  sudo userdel -rf wtc
+USR_ID=$(grep wtc /etc/passwd|cut -d: -f 3)
+
+if [[ "$(USR_ID)" =~ ^[0-9]+$ ]]; then
+        sudo userdel -rf wtc
 else
-  echo "creating user..."
+        echo "creating user..."
 fi
 
 # creates a standerd user
