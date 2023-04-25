@@ -6,15 +6,15 @@ USR_ID_WTC=$(grep wtc /etc/passwd|cut -d: -f 3)
 USR_ID_CAMPER=$(grep bootcamp /etc/passwd|cut -d: -f 3)
 
 if [[ "${USR_ID_CAMPER}" =~ ^[0-9]+$ ]]; then
-        sudo userdel -rf bootcamp
+        sudo userdel -rf wtc
 else
-        echo "No bootcamp user..."
+        echo "No wtc user..."
 fi
 
 if [[ "${USR_ID_WTC}" =~ ^[0-9]+$ ]]; then
-        sudo userdel -rf wtc
+        sudo userdel -rf bootcamp
 else
-        echo "Creating wtc user..."
+        echo "Creating wtc bootcamp..."
 fi
 
 # creates a standerd user
