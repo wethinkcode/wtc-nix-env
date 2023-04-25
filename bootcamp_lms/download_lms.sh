@@ -7,7 +7,7 @@ read -p "Enter link of wtc-lms from copied from Slack: " wtc_lms_url
 
 wget -P /home/bootcamp/ $wtc_lms_url
 
-chmod u+x wtc-lms
+chmod u+x /home/bootcamp/wtc-lms
 
 wget -P /home/bootcamp/tmp_bootcamp_lms/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp_lms/path
 
