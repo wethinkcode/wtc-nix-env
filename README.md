@@ -2,6 +2,8 @@
 
 An install repo that would create a universal environment for students to complete their projects
 
+### Please note the following scripts need to be run from a user profile with admin rights
+
 ## automated install command for user wtc
 
 sh <(curl -L https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/install-wtc.sh)
