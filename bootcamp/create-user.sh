@@ -8,6 +8,7 @@ USR_ID_CAMPER=$(grep bootcamp /etc/passwd | cut -d: -f 3)
 if [[ "${USR_ID_CAMPER}" =~ ^[0-9]+$ ]]
 then
         sudo userdel -rf bootcamp
+        sudo rm -rf /home/bootcamp-profile
         sudo systemctl disable bootcamp-nix.service
         sudo systemctl disable bootcamp-profile.service
         sudo rm -rf /usr/local/bin/bootcamp-nix
