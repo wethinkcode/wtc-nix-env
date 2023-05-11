@@ -23,8 +23,8 @@
   home.packages = with pkgs; [
     slack
     libreoffice
-    gimp vlc audacity shotcut
     gnupg docker docker-compose git
+    gimp vlc audacity shotcut handbrake
     neovim jetbrains.idea-community jetbrains.jdk android-studio vscode
   ];
 
