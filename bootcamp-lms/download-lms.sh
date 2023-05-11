@@ -17,7 +17,8 @@ else
 
     chmod +x /home/bootcamp/Downloads/wtc-lms
 
-    if [ -d "$HOME/.local/bin"] ; then
+    if [ -d "$HOME/.local/bin"] 
+    then
         echo "Your ~/.local/bin folder is in place, copying wtc-lms there..."
     else
         echo "Creating the folder..."
@@ -39,4 +40,3 @@ else
 
     cd /home/bootcamp/ 
 fi
-
