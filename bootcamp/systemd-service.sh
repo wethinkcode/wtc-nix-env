@@ -7,6 +7,8 @@ sudo mkdir /home/bootcamp-profile
 
 sudo chown root:root /home/bootcamp-profile
 
+sudo rsync -a --delete /home/bootcamp/ /home/bootcamp-profile/
+
 cd ~
 
 sudo rsync -avh --delete /home/bootcamp/ /home/bootcamp-profile/
