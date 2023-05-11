@@ -15,7 +15,7 @@ then
     echo "You did not press enter? Exiting..."
 else
 
-    chmod u+x /home/bootcamp/Downloads/wtc-lms
+    chmod +x /home/bootcamp/Downloads/wtc-lms
 
     if [ -d "$HOME/.local/bin"] ; then
         echo "Your ~/.local/bin folder is in place, copying wtc-lms there..."
