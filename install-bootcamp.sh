@@ -72,3 +72,5 @@ rm /tmp/tmp_bootcamp/systemd-service.sh
 
 # delete temporary work folder
 rm -rf /tmp/tmp_bootcamp
+
+echo "done creating bootcamp"

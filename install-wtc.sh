@@ -147,3 +147,5 @@ rm /tmp/tmp_wtc/systemd-service.sh
 
 # delete temporary work folder
 rm -rf /tmp/tmp_wtc
+
+echo "done creating wtc"

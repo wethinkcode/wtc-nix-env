@@ -18,7 +18,7 @@ then
         sudo rm -rf /lib/systemd/system/bootcamp-profile.service
         sudo rm -rf /etc/systemd/bootcamp-profile.service
 else
-        echo "No bootcamp user..."
+        echo "no bootcamp user..."
 fi
 
 if [[ "${USR_ID_WTC}" =~ ^[0-9]+$ ]]
@@ -29,7 +29,7 @@ then
         sudo rm -rf /lib/systemd/system/wtc-nix.service
         sudo rm -rf /etc/systemd/wtc-nix.service
 else
-        echo "No wtc user..."
+        echo "no wtc user..."
 fi
 
 # creates a standerd user
