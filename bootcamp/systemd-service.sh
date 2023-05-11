@@ -11,8 +11,6 @@ sudo rsync -a --delete /home/bootcamp/ /home/bootcamp-profile/
 
 cd ~
 
-sudo rsync -avh --delete /home/bootcamp/ /home/bootcamp-profile/
-
 sudo wget -P /tmp/tmp_bootcamp/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp/bootcamp-update
 
 sudo mv /tmp/tmp_bootcamp/bootcamp-update /usr/local/bin/bootcamp-update
