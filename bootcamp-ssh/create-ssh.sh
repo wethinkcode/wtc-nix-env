@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-
-
 mkdir ~/.ssh 
 
 read -p "Press enter after entering your ssh passphrase (default is bootcamper): "$'\n' -s passphrase
