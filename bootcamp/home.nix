@@ -22,11 +22,11 @@
   # environment.
   home.packages = with pkgs; [
     git
-    #slack
-    #vlc gimp
-    #gnupg git
-    #libreoffice
-    #neovim vscode
+    slack
+    vlc gimp
+    gnupg git
+    libreoffice
+    neovim vscode
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
