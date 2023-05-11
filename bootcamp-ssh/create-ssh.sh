@@ -10,5 +10,5 @@ then
     ssh-keygen -t rsa -N $passphrase -C bootcamper -f ~/.ssh/lid_rsa
 else
     default_passphrase=bootcamper
-    ssh-keygen -t rsa -N $default_passphrase -C bootcamper -f ~/.ssh/lid_rsa
+    ssh-keygen -t rsa -N $default_passphrase -C bootcamper -f ~/.ssh/id_rsa
 fi
