@@ -21,8 +21,8 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    slack
     libreoffice
+    slack zoom-us discord
     gnupg docker docker-compose git
     gimp vlc audacity shotcut handbrake
     neovim jetbrains.idea-community jetbrains.jdk android-studio vscode
