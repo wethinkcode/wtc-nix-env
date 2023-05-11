@@ -1,5 +1,5 @@
-
+# this file is no longer needed, only here as an example on how to add a directory to $PATH
 # adding ~/ to $PATH
-if [ -d "$HOME" ] ; then
-    PATH="$HOME:$PATH"
-fi
+#if [ -d "$HOME" ] ; then
+#    PATH="$HOME:$PATH"
+#fi
