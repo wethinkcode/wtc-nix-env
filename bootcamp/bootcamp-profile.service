@@ -1,8 +1,12 @@
 [Unit]
 After=network.target
+StartLimitBurst=3
+StartLimitIntervalSec=600s
 
 [Service]
 Type=idle
+Restart=on-failure
+RestartSec=600s
 ExecStart=/usr/bin/bash /usr/local/bin/bootcamp-update
 ExecStop=/usr/bin/bash /usr/local/bin/bootcamp-update
 
