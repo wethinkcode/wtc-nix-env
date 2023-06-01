@@ -8,34 +8,34 @@ rm -rf /tmp/tmp_bootcamp_lms/
 mkdir /tmp/tmp_bootcamp_lms/
 
 # install requirements
-rm -f /tmp/tmp_bootcamp_lms/download_lms.sh
+rm -f /tmp/tmp_bootcamp_lms/download-lms.sh
 
 wget -P /tmp/tmp_bootcamp_lms/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp-lms/download-lms.sh
 
-chmod +x /tmp/tmp_bootcamp_lms/download_lms.sh
+chmod +x /tmp/tmp_bootcamp_lms/download-lms.sh
 
 cd /tmp/tmp_bootcamp_lms/
 
-./download_lms.sh
+./download-lms.sh
 
 cd ~
 
-rm /tmp/tmp_bootcamp_lms/download_lms.sh
+rm /tmp/tmp_bootcamp_lms/download-lms.sh
 
 # lms config
-rm -f /tmp/tmp_bootcamp_lms/load_config.sh
+rm -f /tmp/tmp_bootcamp_lms/load-config.sh
 
 wget -P /tmp/tmp_bootcamp_lms/ https://raw.githubusercontent.com/wethinkcode/wtc-nix-env/main/bootcamp-lms/load-config.sh
 
-chmod +x /tmp/tmp_bootcamp_lms/load_config.sh
+chmod +x /tmp/tmp_bootcamp_lms/load-config.sh
 
 cd /tmp/tmp_bootcamp_lms/
 
-./load_config.sh
+./load-config.sh
 
 cd ~
 
-rm /tmp/tmp_bootcamp_lms/load_config.sh
+rm /tmp/tmp_bootcamp_lms/load-config.sh
 
 # clearing temporary work folder
 rm -rf /tmp/tmp_bootcamp_lms/
