@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-cd /home/bootcamp/tmp_bootcamp_lms/
+cd /tmp/tmp_bootcamp_lms/
 
 open https://wethinkcode-community.slack.com/archives/C01QPC5DLBA
 
