@@ -4,6 +4,7 @@ set -e
 # delete user
 USR_ID_WTC=$(grep wtc /etc/passwd | cut -d: -f 3)
 USR_ID_CAMPER=$(grep bootcamp /etc/passwd | cut -d: -f 3)
+USR_ID_ADMIN=$(grep admin /etc/passwd | cut -d: -f 3)
 
 if [[ "${USR_ID_CAMPER}" =~ ^[0-9]+$ ]]
 then
@@ -37,3 +38,13 @@ sudo adduser --disabled-password --gecos "" bootcamp
 
 # give the user a password
 echo "bootcamp:bootcamp" | sudo chpasswd
+
+# hide admin user
+if [[ "${USR_ID_ADMIN}" =~ ^[0-9]+$ ]]
+then
+        touch /target/var/lib/AccountsService/users/admin
+        echo "[User]" >> /target/var/lib/AccountsService/users/admim
+        echo "SystemAccount=true" >> /target/var/lib/AccountsService/users/admin
+else
+        echo "no admin user, please add..."
+fi
